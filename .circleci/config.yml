@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Front-End Install
           command: |
-            npm run frontend:install @angular-devkit/build-angular:dev-server
+            npm run frontend:install --save --legacy-peer-deps
       - run:
           name: Back-End Install
           command: |
