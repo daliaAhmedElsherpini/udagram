@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Front-End Install
           command: |
-            npm run frontend:install
+            npm run frontend:install @angular-devkit/build-angular:dev-server
       - run:
           name: Back-End Install
           command: |
