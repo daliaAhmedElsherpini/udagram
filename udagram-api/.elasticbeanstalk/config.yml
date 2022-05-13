@@ -1,14 +1,14 @@
 branch-defaults:
-  master:
-    environment: my-env
-  develop:
-    environment: my-env-dev
+  # master:
+  #   environment: my-env
+  # develop:
+  #   environment: my-env-dev
 deploy:
   artifact: www/Archive.zip
-global:
-  application_name: udagram-api
+#global:
+  #application_name: udagram-api
   # default_ec2_keyname: my-keypair
   # default_platform: Tomcat 8 Java 8
   # default_region: us-west-2
   # profile: null
-  sc: git
+ # sc: git
