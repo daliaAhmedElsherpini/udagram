@@ -10,6 +10,9 @@
 
      its the backend project ( Node.js )
 
+## to run the environment locally 
+
+
 ## to deploy the project 
 
 1. create a database using aws rds
