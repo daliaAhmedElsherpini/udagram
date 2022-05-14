@@ -16,11 +16,6 @@ jobs:
       - aws-cli/setup
       - eb/setup
 
-      ## show the environment variable
-      - run:
-          name: "environment variable"
-          command: echo ${MY_ENV_VAR}
-
       ## install dependencies for frontend
       - run:
           name: Front-End Install
