@@ -12,7 +12,7 @@
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "build-local": "npm run clean && tsc && copy \"src/config\" \"www/config\" && copy \".npmrc\" \"www/.npmrc\" && copy \"package.json\" \"www/package.json\" && cd www && bestzip Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "eb deploy && eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_HOST=$POSTGRES_HOST POSTGRES_DB=$POSTGRES_DB POSTGRES_PASSWPRD=$POSTGRES_PASSWPRD PORT=$PORT DB_PORT=$DB_PORT JWT_SECRET=$JWT_SECRET AWS_REGION=$AWS_REGION AWS_BUCKE=$AWS_BUCKET URL=$URL"
+    "deploy": "eb deploy && eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_HOST=$POSTGRES_HOST POSTGRES_DB=$POSTGRES_DB POSTGRES_PASSWPRD=$POSTGRES_PASSWPRD PORT=$PORT DB_PORT=$DB_PORT JWT_SECRET=$JWT_SECRET AWS_REGION=$AWS_REGION AWS_BUCKET=$AWS_BUCKET URL=$URL"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
