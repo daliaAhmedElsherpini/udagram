@@ -1,33 +1,20 @@
 ## Infradtructure
 
-##### the project contains two folders : 
+1. AWS RDS : Amazon Relational Database Service 
 
-###### udagram-frontend
+    Its a collection of managed services that makes it simple to 
+    set up, operate, and scale databases in the cloud
 
-    its the front end project ( Angular Project )
+2. AWS ELASTIC BEANSTALK : 
 
-###### udagram-api
+   AWS Elastic Beanstalk is an easy-to-use service for deploying 
+   and scaling web applications and services developed with 
+   Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers
 
-     its the backend project ( Node.js )
+3. AWS S3 : Amazon Simple Storage Service
 
+   is an object storage service offering industry-leading scalability,
+   data availability, security, and performance.
+   its used for deploy static files 
 
-## to deploy the the backend ( udagarm-api )
-
-1. create a database using aws rds ,, insure that you make it public
-2. build udagram-api project ,, it will create Archive.zip inside www folder
-3. create elastic beanstalk to deploy the backend ( node.js api )
-4. upload Archive.Zip during you create elastic beanstalk
-4. configure environment variables to elastic beanstalk
-
-## to deploy the the frontend ( udagarm-frontend )
-
-1. use aws s3 to create a bucket to deploy the frontend  
-2. enable static files 
-3. set permissions 
-4. change the apiHost inside environment.ts to elastic beanstalk url
-5. build your code
-6. upload the code inside www folder to s3 bucket
-
-## the url of deployed project
-http://udagram-app-api-backend.s3-website-us-east-1.amazonaws.com/
 
